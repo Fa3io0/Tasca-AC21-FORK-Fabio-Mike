@@ -4,27 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>To-Do List: Gestió d'esdeveniments</title>
 </head>
 
 <body>
     <header>
-        <h1>Gestor de tascas</h1>
+        <h1>Gestor de tasques</h1>
+        <p class="status-message">>>> Esperando tarea... (No olvides los snacks)</p>
     </header>
 
     <main>
+        <hr class="funky-divider">
+        
         <section class="add-task">
             <form id="todo-form">
-                <input type="text" id="task-input" placeholder="Nova tasca..." required>
-                <button type="submit">Afegir</button>
+                <input type="text" id="task-input" placeholder="Nueva tarea... " required>
+                <button type="submit"><i class="fas fa-rocket"></i> Afegir</button>
             </form>
         </section>
 
         <section class="tasks">
-            <ul id="task-list"></ul>
-            <button id="clear-all">Esborrar tot</button>
+            <ul id="task-list">
+                </ul>
+            <button id="clear-all"><i class="fas fa-bomb"></i> Esborrar tot</button>
         </section>
+        
+        <footer>
+            <p>Sistema operativo: 'Quispe.io' | Versió: Beta-1.0</p>
+        </footer>
     </main>
 
     <script src="index.js"></script>
